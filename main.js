@@ -243,7 +243,6 @@ const listItems = document.querySelectorAll(".content-item");
 listItems.forEach(item => item.addEventListener("click", showItem));
 
 function showItem(e) {
-  // const container = document.querySelector(".container");
   const modal = document.querySelector(".modal-base");
 
   const currentItem = list.find(item => item.name === e.currentTarget.dataset.name)

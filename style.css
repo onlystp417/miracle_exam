@@ -142,7 +142,7 @@ img {
 .countdown {
   padding: 10px;
   text-align: center;
-  background-color: rgb(187, 197, 129);
+  background-color:#bbc581;
 }
 
 /* conten list */
@@ -156,15 +156,17 @@ img {
 .content-item {
   flex: 0 1 25%;
   padding: 5px 5px;
+  font-size: 12px;
+  color: #9DBFAF;
+}
+
+.content-item:hover {
+  background-color:#bbc581;
+  color: #fff;
 }
 
 .content-item img {
   width: 100%;
-}
-
-.content-item div {
-  font-size: 12px;
-  color: #9DBFAF;
 }
 
 /* sort */
