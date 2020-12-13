@@ -120,6 +120,8 @@ function renderList(contentArray) {
     `
   });
   contentList.innerHTML = listElement.join("");
+  const listItems = document.querySelectorAll(".content-item");
+  listItems.forEach(item => item.addEventListener("click", showItem));
 }
 
 // carousle
@@ -239,9 +241,6 @@ function sortType(e) {
 }
 
 // popover
-const listItems = document.querySelectorAll(".content-item");
-listItems.forEach(item => item.addEventListener("click", showItem));
-
 function showItem(e) {
   const modal = document.querySelector(".modal-base");
 
