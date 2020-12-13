@@ -1,0 +1,274 @@
+/* reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #f2f2f2;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+/* search bar */
+
+.search {
+  display: flex;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* carousel */
+
+.carousel {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item-visible {
+  display: block;
+  animation: fadedVisibility 0.5s;
+}
+
+.carousel-actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.carousel-actions button {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  border: none;
+  font-size: 20px;
+  background-color: #00B4CC;
+  color: #e0e0e0;
+  transition: all 0.5s;
+}
+
+.carousel-actions button:hover {
+  background-color: darkred;
+}
+
+.carousel-actions #carousel-slide-nav {
+  align-self: flex-end;
+}
+
+.carousel-actions #carousel-slide-nav span {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  background: rgba(250, 250, 250, 0.625);
+  transition: all 0.5s;
+}
+
+.carousel-actions #carousel-slide-nav span + span {
+  margin-left: 15px;
+}
+
+.carousel-actions #carousel-slide-nav span.nav-current,
+.carousel-actions #carousel-slide-nav span.nav-current:hover {
+  background: crimson;
+}
+
+.carousel-actions #carousel-slide-nav span:hover {
+  background: white;
+}
+
+@keyframes fadedVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* count down */
+
+.countdown {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(187, 197, 129);
+}
+
+/* conten list */
+
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.content-item {
+  flex: 0 1 25%;
+  padding: 5px 5px;
+}
+
+.content-item img {
+  width: 100%;
+}
+
+.content-item div {
+  font-size: 12px;
+  color: #9DBFAF;
+}
+
+/* sort */
+.sort {
+  font-size: 0;
+  padding: 10px 0;
+}
+
+.sort div {
+  display: inline-block;
+  width: 20%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.sort-button {
+  width: 100%;
+  padding: 10px;
+  background-color: inherit;
+  border: none;
+  border: 1px solid #00B4CC;
+  border-radius: 30px;
+  color: #00B4CC;
+  cursor: pointer;
+}
+
+.sort-button:hover {
+  background-color:  #00B4CC;
+  color: #fff;
+}
+
+/* modal */
+.modal-base {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #00000066;
+  text-align: center;
+  z-index: 99;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.modal img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.modal div {
+  text-align: left;
+  color: #9DBFAF;
+}
+
+.modal button {
+  margin-top: 20px;
+  border: 1px solid #9DBFAF;
+  padding: 10px 30px;
+  background-color: inherit;
+  color: #9DBFAF;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color:  #9DBFAF;
+  color: #fff;
+}
+
+.show {
+  opacity: 1;
+}
+
+.d-none {
+  visibility: hidden;
+}
+
+/* scroll top */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #00B4CC;
+  border-radius: 9999px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-top:hover {
+  border: 1px solid #00B4CC;
+  color: #00B4CC;
+  background-color: inherit;
+}
