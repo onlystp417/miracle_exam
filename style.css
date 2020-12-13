@@ -18,6 +18,10 @@ img {
   vertical-align: top;
 }
 
+button:active, button:focus {
+  outline: none;
+}
+
 .container {
   width: 75%;
   margin: 0 auto;
