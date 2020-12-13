@@ -1,5 +1,7 @@
 # 奇迹科技 小測驗
 
+請看完成 [Demo](https://onlystp417.github.io/miracle_exam/)
+
 ## 題目
 實作以下五種功能之頁面:(以javascript語言作答，不限框架)，將程式碼上傳至 Github， 並於指定時間內回傳網址即可。
 
