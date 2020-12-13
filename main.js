@@ -212,7 +212,8 @@ const searchButton = document.querySelector(".searchButton");
 searchTerm.addEventListener("input", search);
 searchButton.addEventListener("click", search)
 
-function search() {
+function search(e) {
+  e.preventDefault();
   const name = searchTerm.value;
   const contentArray = list.filter(item => {
     return item.name.includes(name) || item.type.includes(name);
